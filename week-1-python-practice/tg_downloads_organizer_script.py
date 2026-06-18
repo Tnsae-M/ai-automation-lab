@@ -1,50 +1,104 @@
 import os
 import shutil
-tg_path=os.path.join("C:\\","Users","ThinkPad","Downloads","Telegram Desktop")
+import logging
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+tg_path = os.path.join("C:\\", "Users", "ThinkPad", "Downloads", "Telegram Desktop")
+
+# Extension to folder mapping
+extension_mapping = {
+    ".pdf": "pdfs",
+    ".md": "mds",
+    ".txt": "txts",
+    ".jpg": "jpgs",
+    ".jpeg": "jpgs",
+    ".png": "pngs",
+    ".wav": "audios",
+    ".mp3": "audios",
+    ".mp4": "videos",
+    ".doc": "docs",
+    ".docx": "docs",
+    ".xls": "spreadsheets",
+    ".xlsx": "spreadsheets",
+    ".ppt": "presentations",
+    ".pptx": "presentations",
+    ".zip": "archives",
+    ".rar": "archives",
+    ".csv": "csvs"
+}
+
+def handle_duplicate(dest_path):
+    """Handle duplicate files by renaming them with a counter."""
+    if not os.path.exists(dest_path):
+        return dest_path
+    
+    name, ext = os.path.splitext(dest_path)
+    counter = 1
+    new_path = f"{name}_{counter}{ext}"
+    
+    while os.path.exists(new_path):
+        counter += 1
+        new_path = f"{name}_{counter}{ext}"
+    
+    logger.warning(f"Duplicate detected. Renaming to: {os.path.basename(new_path)}")
+    return new_path
+
 def organize_files():
-    files=os.listdir(tg_path)
-    for f in files:
-        updated_path=os.path.join(tg_path,f)
-        if os.path.isdir(updated_path):
-            continue
-        # optionally use f.lowercase.endswith(".pdf",..)
-        if f.endswith((".pdf",".PDF")):
-            os.makedirs(os.path.join(tg_path,"pdfs"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"pdfs",f))
-        elif f.endswith((".md",".MD")):
-            os.makedirs(os.path.join(tg_path,"mds"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"mds",f))
-        elif f.endswith((".txt",".TXT")):
-            os.makedirs(os.path.join(tg_path,"txts"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"txts",f))
-        elif f.endswith((".jpg",".JPG")):
-            os.makedirs(os.path.join(tg_path,"jpgs"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"jpgs",f))
-        elif f.endswith((".png",".PNG")):
-            os.makedirs(os.path.join(tg_path,"pngs"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"pngs",f))
-        elif f.endswith((".wav",".WAV")):
-            os.makedirs(os.path.join(tg_path,"audios"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"audios",f))
-        elif f.endswith((".doc",".DOC",".docx",".DOCX")):
-            os.makedirs(os.path.join(tg_path,"docs"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"docs",f))
-        elif f.endswith((".xls",".XLS",".xlsx",".XLSX")):
-            os.makedirs(os.path.join(tg_path,"spreadsheets"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"spreadsheets",f))
-        elif f.endswith((".ppt",".PPT",".pptx",".PPTX")):
-            os.makedirs(os.path.join(tg_path,"presentations"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"presentations",f))
-        elif f.endswith((".zip",".ZIP",".rar",".RAR")):
-            os.makedirs(os.path.join(tg_path,"archives"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"archives",f))
-        elif f.endswith((".csv",".CSV")):
-            os.makedirs(os.path.join(tg_path,"csvs"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"csvs",f))
-        elif f.endswith((".mp3",".MP3")):
-            os.makedirs(os.path.join(tg_path,"audios"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"audios",f))
-        elif f.endswith((".mp4",".MP4")):
-            os.makedirs(os.path.join(tg_path,"videos"),exist_ok=True)
-            shutil.move(updated_path,os.path.join(tg_path,"videos",f))
-organize_files()
+    """Organize files in the target directory by file type."""
+    try:
+        if not os.path.exists(tg_path):
+            logger.error(f"Directory not found: {tg_path}")
+            return
+        
+        files = os.listdir(tg_path)
+        logger.info(f"Found {len(files)} items to process")
+        
+        for f in files:
+            updated_path = os.path.join(tg_path, f)
+            
+            # Skip directories
+            if os.path.isdir(updated_path):
+                continue
+            
+            try:
+                # Get file extension using os.path.splitext and convert to lowercase
+                _, ext = os.path.splitext(f)
+                ext_lower = ext.lower()
+                
+                # Check if extension exists in mapping
+                if ext_lower not in extension_mapping:
+                    logger.debug(f"Skipping file with unmapped extension: {f}")
+                    continue
+                
+                # Get destination folder from mapping
+                dest_folder = extension_mapping[ext_lower]
+                dest_dir = os.path.join(tg_path, dest_folder)
+                
+                # Create destination folder
+                os.makedirs(dest_dir, exist_ok=True)
+                
+                # Prepare destination path
+                dest_path = os.path.join(dest_dir, f)
+                
+                # Handle duplicates
+                dest_path = handle_duplicate(dest_path)
+                
+                # Move file
+                shutil.move(updated_path, dest_path)
+                logger.info(f"Moved '{f}' to '{dest_folder}/'")
+                
+            except Exception as e:
+                logger.error(f"Error processing file '{f}': {str(e)}")
+                continue
+    
+    except Exception as e:
+        logger.error(f"Error in organize_files: {str(e)}")
+
+if __name__ == "__main__":
+    organize_files()
