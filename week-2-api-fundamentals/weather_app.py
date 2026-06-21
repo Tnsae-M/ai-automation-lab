@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def _setup_logger():
+def setup_logger():
 	# Simple, plain logging formatter (no color dependency)
 	fmt = "%(asctime)s %(levelname)s: %(message)s"
 	datefmt = "%Y-%m-%d %H:%M:%S"
@@ -20,42 +20,44 @@ def _setup_logger():
 		logger.addHandler(handler)
 	return logger
 
-def main():
-	logger = _setup_logger()
-	weather_api_key=os.environ.get("weather_api_key")
-	city=input("enter name of city you want forcast from: ")
+def get_weather(city_input,api_Key,logger):
+	logger=setup_logger()
 	params={
-	"key":weather_api_key,
-	"q":city,
+	"key":api_Key,
+	"q":city_input,
 	"aqi":"no"
 	}
-	url = f"http://api.weatherapi.com/v1/current.json"
+	url = f"https://api.weatherapi.com/v1/current.json"
 	try:
-		res = requests.get(url,params=params, timeout=10)
+		res=requests.get(url=url,params=params)
+		res.raise_for_status()
+		return res.json()
 	except requests.exceptions.RequestException as e:
-		# Log a concise single-line error; full traceback available at DEBUG level
-		logger.error("Request failed for %s: %s", url,e)
-		logger.debug("Request exception details", exc_info=True)
-		sys.exit(2)
+		logger.error("Requests failed: ",e)
+		return None
+def display_weather(data):
+	location=data["location"]
+	current=data["current"]
+	print("Current weather forcast:")
+	print(f"city: {location["name"]}")
+	print(f"country: {location["country"]}")
+	print(f"last updated: {current["last_updated"]}")
+	print( f"temprature in celcius: {current["temp_c"]}")
+	print(f"temprature in farenheit: {current["temp_f"]}")
+	print(f"current condition: {current["condition"]["text"]}")
 
-	status = res.status_code
-	if status != 200:
-		logger.error("HTTP %s for %s", status, url)
-		text = res.text or "(no response body)"
-		logger.debug(text[:1000])
-		sys.exit(3)
-
-	try:
-		data = res.json()
-	except ValueError as e:
-		# Concise error message; retain response body at DEBUG level
-		logger.error("Failed to decode JSON response: %s", e)
-		logger.debug("Response body (truncated): %s", res.text[:1000])
-		sys.exit(4)
-
-	logger.info("Success (%s)", status)
-	print(json.dumps(data, indent=2, ensure_ascii=False))
-
-
+def main():
+	logger=setup_logger()
+	city=input("Enter city name: ").strip()
+	if not city:
+		logger.error("City name can't be empty")
+		sys.exit(1)
+	api=os.getenv("WEATHER_API_KEY")
+	if not api:
+		logger.error("Weather api key not found")
+		sys.exit(1)
+	weather_data=get_weather(city,api,logger)
+	if weather_data:
+		display_weather(weather_data)
 if __name__ == "__main__":
 	main()
