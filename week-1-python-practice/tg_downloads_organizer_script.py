@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-tg_path = os.path.join("C:\\", "Users", "ThinkPad", "Downloads", "Telegram Desktop")
+tg_path = os.path.join("C:\\", "Users", "ThinkPad", "Downloads")
 
 # Extension to folder mapping
 extension_mapping = {
