@@ -20,14 +20,18 @@ def _setup_logger():
 		logger.addHandler(handler)
 	return logger
 
-
 def main():
 	logger = _setup_logger()
 	weather_api_key=os.environ.get("weather_api_key")
 	city=input("enter name of city you want forcast from: ")
-	url = f"http://api.weatherapi.com/v1/current.json?key={weather_api_key} &q={city}&aqi=no"
+	params={
+	"key":weather_api_key,
+	"q":city,
+	"aqi":"no"
+	}
+	url = f"http://api.weatherapi.com/v1/current.json"
 	try:
-		res = requests.get(url, timeout=10)
+		res = requests.get(url,params=params, timeout=10)
 	except requests.exceptions.RequestException as e:
 		# Log a concise single-line error; full traceback available at DEBUG level
 		logger.error("Request failed for %s: %s", url,e)
