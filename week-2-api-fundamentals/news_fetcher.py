@@ -46,16 +46,18 @@ def get_news(topic,api,filters,logger):
         return None
 def display(data):
     articles=data["articles"]
-    print(f"Top 5 results!")
     # instead of print for articles["XX"] use articles.get("XX","No XX"). ex:- articles["title"]
-    for article in articles[:5]:
-        print("======================================")
-        print(f"Article:{articles["source"]["name"]}")
-        print(f"Author:{articles["author"]}")
-        print(f"Title:{articles["title"]}")
-        print(f"Description:{articles["description"]}")
-        print(f"link to article:{articles["url"]}")
-        print(f"date of publish:{articles["publishedAt"]}")
-        print("======================================")
-
+    if articles:
+        print(f"Top 5 results!")
+        for article in articles[:5]:
+            print("-"*25)
+            print(f"Article:{article["source"]["name"]}")
+            print(f"Author:{article["author"]}")
+            print(f"Title:{article["title"]}")
+            print(f"Description:{article["description"]}")
+            print(f"link to article:{article["url"]}")
+            print(f"date of publish:{article["publishedAt"]}")
+            print("-"*25)
+        else:
+            print("No news regarding this topic")
 main()
