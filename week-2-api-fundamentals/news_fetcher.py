@@ -38,7 +38,7 @@ def get_news(topic,api,filters,logger):
     "sortBy":filters
     }
     try:
-        res=requests.get(url,params)
+        res=requests.get(url,params=params,timeout=10)
         res.raise_for_status()
         return res.json()
     except requests.exceptions.RequestException as exe:
@@ -47,14 +47,15 @@ def get_news(topic,api,filters,logger):
 def display(data):
     articles=data["articles"]
     print(f"Top 5 results!")
-    for i in range(0,6):
+    # instead of print for articles["XX"] use articles.get("XX","No XX"). ex:- articles["title"]
+    for article in articles[:5]:
         print("======================================")
-        print(f"Article:{articles[i]["source"]["name"]}")
-        print(f"Author:{articles[i]["author"]}")
-        print(f"Title:{articles[i]["title"]}")
-        print(f"Description:{articles[i]["description"]}")
-        print(f"link to article:{articles[i]["url"]}")
-        print(f"date of publish:{articles[i]["publishedAt"]}")
+        print(f"Article:{articles["source"]["name"]}")
+        print(f"Author:{articles["author"]}")
+        print(f"Title:{articles["title"]}")
+        print(f"Description:{articles["description"]}")
+        print(f"link to article:{articles["url"]}")
+        print(f"date of publish:{articles["publishedAt"]}")
         print("======================================")
 
 main()
