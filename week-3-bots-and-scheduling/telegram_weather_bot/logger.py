@@ -1,11 +1,5 @@
-import sys
-import os
 import logging
-import requests
-from dotenv import load_dotenv
-
-load_dotenv()
-
+import sys
 def setup_logger():
 	# Simple, plain logging formatter (no color dependency)
 	fmt = "%(asctime)s %(levelname)s: %(message)s"
