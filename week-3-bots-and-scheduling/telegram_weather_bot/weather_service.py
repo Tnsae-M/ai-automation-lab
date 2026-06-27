@@ -4,7 +4,7 @@ from logger import setup_logger
 logger=setup_logger()
 apis=config()
 if apis is not None:
-	api_key=apis[0]
+	api_key=apis["weather_api"]
 def get_weather(city_input):
 	params={
 	"key":api_key,

@@ -11,7 +11,7 @@ async def weather(update:Update,context:ContextTypes.DEFAULT_TYPE):
 	city=" ".join(context.args)
 	if not city:
 		await update.message.reply_text("City not provided. please provide a city.")
-		logger.error("City not provided. please provide a city.")
+		print("Missing city name!")
 		return None
 	weather=get_weather(city)
 	if not weather:
