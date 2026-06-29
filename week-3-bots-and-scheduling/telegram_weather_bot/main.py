@@ -1,8 +1,7 @@
 from config import config
 from telegram.ext import (ApplicationBuilder,CommandHandler)
 from handler import start,weather
-
-
+#insert AP scheduler
 apis=config()
 if apis is not None:
 	bot_key=apis["bot_api"]
