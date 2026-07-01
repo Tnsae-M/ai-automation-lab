@@ -1,9 +1,14 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import asyncio
 
-def say_hello():
+async def say_hello():
     print("Scheduler is working")
-scheduler=BlockingScheduler()
-scheduler.add_job(say_hello,trigger='interval',seconds=5)
+scheduler=AsyncIOScheduler()
+scheduler.add_job(say_hello,trigger='interval',seconds=3)
 print("Starting scheduler...")
-scheduler.start()
+async def main():
+    scheduler.start()
+    while True:
+        await asyncio.sleep(1)
+if __name__=="__main__":
+    asyncio.run(main())
