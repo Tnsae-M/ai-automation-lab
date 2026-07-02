@@ -10,7 +10,7 @@ start_handler=CommandHandler("start",start)
 app.add_handler(start_handler)
 app.add_handler(CommandHandler("weather",weather))
 scheduler=start_scheduler(app)
-print("Bot is listening...")
 if __name__=="__main__":
+	print("Bot is listening...")
+	scheduler.start()
 	app.run_polling()
-

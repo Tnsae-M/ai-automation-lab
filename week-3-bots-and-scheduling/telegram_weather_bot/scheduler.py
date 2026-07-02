@@ -1,11 +1,12 @@
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from weather_service import get_weather
 from logger import setup_logger
-
+import asyncio
 logger=setup_logger()
 
 def start_scheduler(application):
-    scheduler = AsyncIOScheduler()
+    loop=asyncio.get_event_loop()
+    scheduler = AsyncIOScheduler(event_loop=loop)
 
     async def weather_scheduled():
         weather=get_weather("Addis ababa")
@@ -20,9 +21,12 @@ def start_scheduler(application):
         country=weather["location"]["country"]
         temp_c=weather["current"]["temp_c"]
         condition=weather["current"]["condition"]["text"]
-        message=(f"Weather fetched successfully. \ncity: {city_name}\\ncountry: {country}\ntemprature in Celcius: {temp_c}\ncondition: {condition} ")
-        await application.bot.send_message(chat_id=application.chat_id, text=message)
-        await application.bot.send.sens_message(chat_id=application.chat_id,text="Scheduler started successfully")
+        message=(f"Weather fetched successfully:\n" 
+                 f"city: {city_name}\n"
+                 f"country: {country}\n"
+                 f"temprature in Celcius: {temp_c}\n"
+                 f"condition: {condition} ")
+        await application.bot.send_message(chat_id=chat_id, text=message)
     scheduler.add_job(weather_scheduled,trigger='interval',seconds=10)
-    scheduler.start()
+    print("Scheduler started...")
     return scheduler
