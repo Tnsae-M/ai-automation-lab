@@ -27,6 +27,6 @@ def start_scheduler(application):
                  f"temprature in Celcius: {temp_c}\n"
                  f"condition: {condition} ")
         await application.bot.send_message(chat_id=chat_id, text=message)
-    scheduler.add_job(weather_scheduled,trigger='interval',seconds=10)
+    scheduler.add_job(weather_scheduled,trigger='cron',second=10)
     print("Scheduler started...")
     return scheduler
