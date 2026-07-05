@@ -8,9 +8,6 @@ logger = setup_logger()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! Welcome to my weather forecast bot.")
-    chat_id = update.effective_chat.id
-    context.application.bot_data["chat_id"] = chat_id
-
 
 async def weather(update: Update, context: ContextTypes.DEFAULT_TYPE):
     city = " ".join(context.args)
