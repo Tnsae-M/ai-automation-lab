@@ -14,4 +14,7 @@ scheduler=start_scheduler(app,chat_id)
 if __name__=="__main__":
 	print("Bot is listening...")
 	scheduler.start()
-	app.run_polling()
+	try:
+		app.run_polling()
+	except KeyboardInterrupt:
+		print("Shutting down...")
