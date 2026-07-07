@@ -9,5 +9,4 @@ response = client.responses.create(
   input="which one has better future comparing going deep and going wide in software engineering?",
   store=True,
 )
-
 print(response.output_text);
