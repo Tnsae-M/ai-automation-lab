@@ -1,37 +1,35 @@
 from google import genai
 from google.genai import types
+from pydantic import BaseModel
+import sys
 from config import gemini_key
+from typing import List
 client = genai.Client(
     api_key=gemini_key
 )
+class CompanyReport(BaseModel):
+    company:str
+    summary:str
+    risk_level:str
+    key_concerns:List[str]
+
 search_tool=types.Tool(google_search=types.GoogleSearch())
 config=types.GenerateContentConfig(tools=[search_tool])
-# interaction = client.interactions.create(
-#     model="gemini-3.5-flash",
-#     input="you are a senior freelancer,Tell me how I can land an internation remote job that pays in dollars as an ethiopian backend developer using TS or JS as a language? consider that I have 2 years of experience in node.js developement and I have a portfolio of 5 projects that I can show to potential clients. Also, give me a list of 10 websites where I can find such jobs?"
-# )
-#  print("Response 1: ",interaction.output_text)
+try:
+    grounded_response= client.models.generate_content(model="gemini-2.5-flash",
+                                        contents="Give me a report about mercor AI Job finding platform for ethiopian native freelance aspiring individuals? use the latest information in a range of 2-3 weeks before today,july 8,2026, as a source.",
+                                        config=config)
+    print(grounded_response.text)
+    print("Space between responses! \n \n")
+    structured_response= client.models.generate_content(model="gemini-2.5-flash",
+                                        contents=f"Extract structured data from this report:\n \n {grounded_response.text}",
+                                        config=types.GenerateContentConfig(
+                                            response_mime_type="application/json",
+                                            response_schema=CompanyReport
+                                        ))
 
-# interaction_2= client.interactions.create(
-#     model="gemini-3.5-flash",
-#     input="from the previous answer, pick out the top 5 websites that I can focus on?",
-#     previous_interaction_id=interaction.id
-# )
-#  print("Response 2: ",interaction_2.output_text)
-# response=client.models.generate_content(
-#     model="gemini-3.1-flash-lite",
-#     contents="Give me a short report about mercor AI job finding platform? use the latest information in a range of 2-3 weeks before today as a source."
-# )
-#  print(response.text)
-chat=client.chats.create(model="gemini-2.5-flash",config=config)
-
-res1=chat.send_message("Give me a short report about mercor AI job finding platform? use the latest information in a range of 2-3 weeks before today as a source.")
-# print(res1.text)
-print("SPACE BETWEEN RESPONSES \n \n \n")
-res2=chat.send_message("verify your sources as of today, july 8,2026")
-# print(res2.text)
-print("SPACE BETWEEN RESPONSES \n \n \n")
-for res in [res1, res2]:
-    meta = res.candidates[0].grounding_metadata
-    if meta and meta.web_search_queries:
-        print("Searched:", meta.web_search_queries)
+    report=CompanyReport.model_validate_json(structured_response.text)
+    print(report)
+except Exception as ex:
+    print(f"Something went wrong when calling API: {ex}")
+    sys.exit(1)
