@@ -26,4 +26,4 @@ for lead in data:
                 print(f"  [override] {lead_obj.customer_name}: forced disqualify")
             print(lead_obj)
         except Exception as e:
-            print(f"Failed on {lead.get('customer_name','unknown')}: {e}")
+            print(f"Failed on {lead.get('full_name','unknown')}: {e}")
