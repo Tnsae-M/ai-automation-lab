@@ -13,6 +13,6 @@ def read_resume(filepath: str) -> str:
     else:
        raise ValueError(f"Unsupported file type: {path.suffix}")
 for resume in resume_files:
-    if resume.name=="Tinsae_Melkamu_intern_CV.pdf":
         text=read_resume(resume)
-print(text[:300])
+        print("========================================")
+        print(text[:300])
