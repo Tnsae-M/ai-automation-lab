@@ -2,7 +2,7 @@ from pathlib import Path
 from pypdf import PdfReader
 
 INPUT_DIR=Path(__file__).parent/"input"
-resume_files=list(INPUT_DIR.glob("*.pdf"))+list(INPUT_DIR.glob("*.txt"))
+# resume_files=list(INPUT_DIR.glob("*.pdf"))+list(INPUT_DIR.glob("*.txt"))
 def read_resume(filepath: str) -> str:
     path = Path(filepath)
     if path.suffix == ".txt":
@@ -12,7 +12,7 @@ def read_resume(filepath: str) -> str:
        return "\n".join(page.extract_text() or "" for page in reader.pages)
     else:
        raise ValueError(f"Unsupported file type: {path.suffix}")
-for resume in resume_files:
-        text=read_resume(resume)
-        print("========================================")
-        print(text[:300])
+# for resume in resume_files:
+#         text=read_resume(resume)
+#         print("========================================")
+#         print(text[:300])
