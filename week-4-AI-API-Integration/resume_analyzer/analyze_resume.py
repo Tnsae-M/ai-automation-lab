@@ -51,7 +51,7 @@ output:
 {
    "resume_score": 9,
     "name": "Sarah Mitchell",
-    target_job": "Automation Expert | RPA & AI Workflow Engineer",
+    "target_job": "Automation Expert | RPA & AI Workflow Engineer",
     "languages": ["Python", "JavaScript", "SQL"],
     "strength": ["Designing and implementing intelligent workflow automation solutions", "Integrating AI-powered tools into business processes", "Reducing manual workload and improving operational efficiency"],
     "weakness": ["Limited experience with certain RPA platforms", "May require additional training for specific enterprise systems"],
@@ -59,13 +59,17 @@ output:
 }
 """
 def analyze_resume(resume_text: str) -> Resume:
-    response = client.responses.parse(
-        model="gpt-5.4-mini",
-        input=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": resume_text}
-        ],
-        text_format=Resume
+    try:
+        response = client.responses.parse(
+            model="gpt-5.4-mini",
+            input=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": resume_text}
+            ],
+            text_format=Resume
 
-    )
-    return response.output_parsed
+        )
+        return response.output_parsed
+    except Exception as e:
+        print(e)
+        return None
