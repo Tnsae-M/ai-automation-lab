@@ -37,6 +37,11 @@ Meridian Business Systems | Jun 2019 - Feb 2022
 - Built web scraping and API integrations to streamline operational data collection.
 - Trained business users on Power Automate and automation best practices.
 
+PROJECTS
+- AI Document Processing Platform — Built an LLM-powered document intake system for finance operations.
+- Intelligent Lead Qualification Assistant — Integrated OpenAI APIs into CRM workflows to score leads.
+- RPA Bot Suite for Accounts Payable — Automated invoice matching and approval routing.
+
 EDUCATION
 B.S. in Computer Science
 University of Texas at Austin | 2013 - 2017
@@ -53,8 +58,10 @@ output:
     "name": "Sarah Mitchell",
     "target_job": "Automation Expert | RPA & AI Workflow Engineer",
     "languages": ["Python", "JavaScript", "SQL"],
+    "projects": ["AI Document Processing Platform", "Intelligent Lead Qualification Assistant", "RPA Bot Suite for Accounts Payable"],
     "strength": ["Designing and implementing intelligent workflow automation solutions", "Integrating AI-powered tools into business processes", "Reducing manual workload and improving operational efficiency"],
     "weakness": ["Limited experience with certain RPA platforms", "May require additional training for specific enterprise systems"],
+    "job_readiness_verdict": ["Strong candidate for remote automation roles with a solid portfolio and measurable impact", "Well prepared for international freelance work in automation and AI integrations"],
     "suggestion": ["Gain experience with additional RPA platforms", "Explore advanced AI/ML techniques for automation", "Participate in cross-functional projects to broaden skill set"]
 }
 """
