@@ -6,3 +6,5 @@ class Lead(BaseModel):
     intent:Literal["high","medium","low"]
     budget_signal:Literal["has_budget","unclear","no_budget"]
     next_action: Literal["book_call","disqualify","nurture_emails"]
+    # reason is not incorporated inside the main file.
+    reason:str
