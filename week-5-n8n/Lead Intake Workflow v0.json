@@ -1,0 +1,289 @@
+{
+  "name": "Lead Intake Workflow v0",
+  "nodes": [
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "gpt-5.4-mini",
+          "mode": "list",
+          "cachedResultName": "GPT-5.4-MINI"
+        },
+        "responses": {
+          "values": [
+            {
+              "role": "system",
+              "content": "You are a strict B2B lead qualification analyst.\n\nScore leads from 0-10 based on explicit budget, decision authority, and timeline signals.\n\nRules:\n- Prioritize explicit evidence found in the lead message.\n- Infer budget_signal and timeline_signal only from the provided information.\n- Infer intent as one of: high, medium, or low.\n- If budget_signal is \"no_budget\" and the score is 2 or below, next_action must be \"disqualify\".\n- Always provide a short reason explaining the score and recommendation.\n\nExample Input:\n{\n  \"name\": \"John Smith\",\n  \"company\": \"Acme Marketing\",\n  \"email\": \"john@acme.com\",\n  \"phone\": \"+1-555-123-4567\",\n  \"website\": \"https://acme.com\",\n  \"message\": \"We need AI automation for lead qualification and appointment booking. Budget around $8,000. We'd like to start this month.\"\n}\n\nExample Output:\n{\n  \"name\": \"John Smith\",\n  \"company\": \"Acme Marketing\",\n  \"score\": 9,\n  \"intent\": \"high\",\n  \"budget_signal\": \"budget_confirmed\",\n  \"timeline_signal\": \"immediate\",\n  \"decision_authority\": \"unknown\",\n  \"next_action\": \"schedule_call\",\n  \"reason\": \"Lead has a clearly stated budget and wants to start this month, indicating strong purchase intent. Decision authority is not explicitly mentioned.\"\n}"
+            },
+            {
+              "content": "=here is the lead:\n{\n{{ $json.body.name }}\n{{ $json.body.company }}\n{{ $json.body.email }}\n{{ $json.body.phone }}\n{{ $json.body.website }}\n{{ $json.body.message }}\n}"
+            }
+          ]
+        },
+        "builtInTools": {},
+        "options": {
+          "textFormat": {
+            "textOptions": {
+              "type": "json_schema",
+              "name": "lead_output_schema",
+              "schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": { \"type\": \"string\" },\n    \"company\": { \"type\": \"string\" },\n    \"score\": { \"type\": \"integer\", \"minimum\": 0, \"maximum\": 10 },\n    \"intent\": { \"type\": \"string\", \"enum\": [\"high\", \"medium\", \"low\"] },\n    \"budget_signal\": { \"type\": \"string\" ,\"enum\":[\"budget_confirmed\",\"unknown\",\"no_budget\"]},\n    \"timeline_signal\": { \"type\": \"string\" },\n    \"decision_authority\": { \"type\": \"string\" },\n    \"next_action\": { \"type\": \"string\",\"enum\":[\"schedule_call\",\"nurture\",\"disqualify\"] },\n    \"reason\": { \"type\": \"string\" }\n  },\n  \"required\": [\"name\", \"company\", \"score\", \"intent\", \"budget_signal\", \"timeline_signal\", \"decision_authority\", \"next_action\", \"reason\"],\n  \"additionalProperties\": false\n}",
+              "strict": true
+            }
+          }
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 2.3,
+      "position": [
+        352,
+        0
+      ],
+      "id": "35145cf2-c92f-401b-ba11-ba9f958f0d4f",
+      "name": "Message a model",
+      "credentials": {
+        "openAiApi": {
+          "id": "ytfzyXB2kS1HrZZj",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "lead-intake",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        144,
+        0
+      ],
+      "id": "de8a80b6-e3bf-4b03-8210-e8e7e9657be5",
+      "name": "Webhook",
+      "webhookId": "927448b1-e57c-448b-80ee-323b9e25a3f8"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.output[0].content[0].text.next_action}}",
+                    "rightValue": "schedule_call",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "d0f7d3bc-5d1a-4850-ad87-88930b62f9d1"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "8125fba9-3b9c-48e1-a5a3-e98460becc45",
+                    "leftValue": "={{$json.output[0].content[0].text.next_action}}",
+                    "rightValue": "nurture",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "cc707614-1c5b-4df1-a347-d5648a662bf4",
+                    "leftValue": "={{$json.output[0].content[0].text.next_action}}",
+                    "rightValue": "disqualify",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        704,
+        0
+      ],
+      "id": "a17466fb-b2ec-41f1-a861-dafabba87a57",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "chatId": "YOUR_CHATID_HERE",
+        "text": "=new lead: {{ $json.output[0].content[0].text.name }} ({{ $json.output[0].content[0].text.company }})\nScore: {{ $json.output[0].content[0].text.score }}\nReason: {{ $json.output[0].content[0].text.reason }}\naction: {{ $json.output[0].content[0].text.next_action }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1200,
+        16
+      ],
+      "id": "63cce3d4-97e0-4f61-b9a9-beb0f7586649",
+      "name": "Send a text message",
+      "webhookId": "61c26372-4aaf-467d-944c-0d15315412aa",
+      "credentials": {
+        "telegramApi": {
+          "id": "KOsdU5ofY4R1kn2i",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"success\": true,\n  \"message\":\"Lead intaked and routed to agent successfully.\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1440,
+        16
+      ],
+      "id": "21c5e72f-5a45-4748-a0d0-2a4907240fb2",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        912,
+        0
+      ],
+      "id": "6d4ab9a5-a5b4-4696-aab6-1a8f84d942e4",
+      "name": "Merge"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Send a text message": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "8a40059b-906b-44f0-a0bd-f0eb8d27bef7",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b5d4af3e6b9cd7c519f0b122dfb3ad70ace703e3021167c92dd6cb167cb2773b"
+  },
+  "nodeGroups": [],
+  "id": "wPp3vp96Ww2AkUE0",
+  "tags": []
+}

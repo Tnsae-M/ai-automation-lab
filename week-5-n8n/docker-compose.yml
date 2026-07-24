@@ -6,7 +6,7 @@ services:
       - "5678:5678"
     environment:
       - N8N_SECURE_COOKIE=false
-      - WEBHOOK_URL=https://stellar-hypnoses-scoring.ngrok-free.dev/
+      - WEBHOOK_URL=https://your-ngrok-url-here.ngrok-free.dev/
     volumes:
       - n8n_data:/home/node/.n8n
 volumes:
