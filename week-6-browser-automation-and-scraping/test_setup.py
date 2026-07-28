@@ -8,12 +8,17 @@ with sync_playwright() as p:
     job_links=page.locator("a[href^='/jobs']")
     count=job_links.count()
     print(f"Found {count} job listings")
+    href_set=set()
     for i in range(count):
         link=job_links.nth(i)
         title=link.inner_text()
-        print("==========")
-        print(link)
-        print("==========")
         href=link.get_attribute("href")
-        print(f"{title}->{href}")
+        if href=="/jobs": 
+            continue
+        if not href in href_set:
+            href_set.add(href)
+            print(f"Job {i} link")
+            print("===================")
+            print(f"{title}->{href}")
+            print("===================")
     browser.close()
