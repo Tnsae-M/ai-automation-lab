@@ -41,11 +41,17 @@ with sync_playwright() as p:
 
                 # test for html structure.
         paragraphs = detail_page.locator("p")
-        job_title=detail_page.locator("h1").nth(0).inner_text()
 
-        print(job_title)
-        for i in range([4,3,10,9,12,11,13]):
-            print(paragraphs.nth(i).inner_text())
-        
+        job_detail = {
+            "title": detail_page.locator("h1").first.inner_text().strip(),
+            "location": paragraphs.nth(3).inner_text().strip(),
+            "job_type": paragraphs.nth(4).inner_text().strip(),
+            "salary_type": paragraphs.nth(9).inner_text().strip(),
+            "experience_level": paragraphs.nth(11).inner_text().strip(),
+            "description": paragraphs.nth(13).inner_text().strip(),
+            "url": first_job_url,
+                    }
+
+        print(job_detail)
     finally:
         browser.close()
