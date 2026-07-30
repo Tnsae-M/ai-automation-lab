@@ -40,15 +40,15 @@ with sync_playwright() as p:
         detail_page.wait_for_load_state("networkidle")
 
                 # test for html structure.
-        paragraphs = detail_page.locator("p")
-
+        job_card = detail_page.locator("div.w-full.rounded-2xl.border.px-4.py-5")
+        paragraphs=job_card.locator("p")
         job_detail = {
-            "title": detail_page.locator("h1").first.inner_text().strip(),
-            "location": paragraphs.nth(3).inner_text().strip(),
-            "job_type": paragraphs.nth(4).inner_text().strip(),
-            "salary_type": paragraphs.nth(9).inner_text().strip(),
-            "experience_level": paragraphs.nth(11).inner_text().strip(),
-            "description": paragraphs.nth(13).inner_text().strip(),
+            "title": job_card.locator("h1").first.inner_text().strip(),
+            "location": paragraphs.nth(2).inner_text().strip(),
+            "job_type": paragraphs.nth(3).inner_text().strip().removeprefix("Job Type:").strip(),
+            "salary_type": paragraphs.nth(8).inner_text().strip(),
+            "experience_level": paragraphs.nth(10).inner_text().strip(),
+            "description": paragraphs.nth(12).inner_text().strip(),
             "url": first_job_url,
                     }
 
