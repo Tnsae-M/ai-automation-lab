@@ -51,7 +51,7 @@ with sync_playwright() as p:
             "description": paragraphs.nth(12).inner_text().strip(),
             "url": first_job_url,
                     }
-
+        print("===========")
         print(job_detail)
     finally:
         browser.close()
