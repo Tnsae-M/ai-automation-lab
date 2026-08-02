@@ -32,7 +32,7 @@ with sync_playwright() as p:
         # pprint(jobs)
 
         detail_page=browser.new_page()
-        first_job_url=jobs[1]["url"]
+        first_job_url=jobs[0]["url"]
 
         detail_page.goto(first_job_url,
                  wait_until="domcontentloaded",
@@ -41,17 +41,24 @@ with sync_playwright() as p:
 
                 # test for html structure.
         job_card = detail_page.locator("div.w-full.rounded-2xl.border.px-4.py-5")
-        paragraphs=job_card.locator("p")
-        job_detail = {
-            "title": job_card.locator("h1").first.inner_text().strip(),
-            "location": paragraphs.nth(2).inner_text().strip(),
-            "job_type": paragraphs.nth(3).inner_text().strip().removeprefix("Job Type:").strip(),
-            "salary_type": paragraphs.nth(8).inner_text().strip(),
-            "experience_level": paragraphs.nth(10).inner_text().strip(),
-            "description": paragraphs.nth(12).inner_text().strip(),
-            "url": first_job_url,
-                    }
-        print("===========")
+        #contains job type,deadline, and sex
+        job_type_container=job_card.locator("div.flex.flex-col.gap-2")
+        #contains location and posted date
+        location_container=job_card.locator("div.mt-2.flex.text-base.font-normal.text-gray-500.gap-3")
+        #contains salary type and experience level
+        salary_exp_container=job_card.locator("div.grid.gap-8.grid-cols-2")
+        #contains job description
+        job_description_container=job_card.locator("p.prose-xl.hyphens-auto.break-words.text-base.text-black")
+
+        job_detail={
+            "title":job_card.locator("h1").first.inner_text().strip(),
+            "job_type":job_type_container.locator("p").nth(0).inner_text().strip().removeprefix("Job Type:").strip(),
+            "location":location_container.locator("p").nth(1).inner_text().strip(),
+            "salary_type":salary_exp_container.locator("p").nth(1).inner_text().strip(),
+            "experience_level":salary_exp_container.locator("p").nth(2).inner_text().strip(),
+            "description":job_description_container.locator("p").nth(0).inner_text().strip(),
+            "url":first_job_url
+        }
         print(job_detail)
     finally:
         browser.close()
