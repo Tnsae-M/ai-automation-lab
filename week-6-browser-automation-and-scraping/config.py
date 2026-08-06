@@ -3,7 +3,7 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-openai_key=os.getenv("OPENAI_API_KEY")
-if not openai_key:
-    print("Something went wrong when fetching openai api key!")
+gemini_key=os.getenv("GEMINI_API_KEY")
+if not gemini_key:
+    print("Something went wrong when fetching gemini api key!")
     sys.exit(1)

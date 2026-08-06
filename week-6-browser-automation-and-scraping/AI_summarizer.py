@@ -1,30 +1,36 @@
 import time
 import json
-from openai import OpenAI,RateLimitError,APIConnectionError,APITimeoutError
+from google import genai 
+from google.genai import types,errors
 from job_data_model import JobSummary
-from config import openai_key
-client = OpenAI(
-  api_key=openai_key
+from config import gemini_key
+client = genai.Client(
+  api_key=gemini_key
 )
 SYSTEM_PROMPT="""You are a senior Job Analyst. You are tasked with summarizing job postings into a structured format.
 You will be provided with job postings in JSON format. Your task is to extract the relevant information
 and return it in a structured format as specified below. If any information is missing, you can leave the field as null."""
+config=types.GenerateContentConfig(
+     system_instruction=SYSTEM_PROMPT,
+     response_schema=JobSummary,
+     response_mime_type="application/json"
+)
 def summarize_job(job_text:dict)->JobSummary|None:
+    retryable_status_codes=[500,429,503,504]
     max_attempt=5
     job=json.dumps(job_text,indent=0)
     for attempt in range(max_attempt):
         try:
-            response=client.responses.parse(
-                model="gpt-5.4-mini",
-                input=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content":job}
-                ],
-                text_format=JobSummary
+            response=client.models.generate_content(
+                model="gemini-3.1-flash-lite",
+                contents=f"Summerize this job: {job}",
+                config=config
             )
-            return response.output_parsed
-        except (RateLimitError,APIConnectionError,APITimeoutError) as e:
-                if attempt !=max_attempt-1:
+            job_obj=JobSummary.model_validate_json(response.text)
+            return job_obj
+        except errors.APIError as e:
+                print(e.code)
+                if attempt !=max_attempt-1 and e.code in retryable_status_codes:
                     time.sleep(2)
                 else:
                     print(f"Job summarzing failed! due to {e}")
