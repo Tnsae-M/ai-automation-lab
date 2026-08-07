@@ -15,9 +15,9 @@ config=types.GenerateContentConfig(
      response_schema=JobSummary,
      response_mime_type="application/json"
 )
+retryable_status_codes=[500,429,503,504]
+max_attempt=5
 def summarize_job(job_text:dict)->JobSummary|None:
-    retryable_status_codes=[500,429,503,504]
-    max_attempt=5
     job=json.dumps(job_text,indent=0)
     for attempt in range(max_attempt):
         try:
@@ -29,12 +29,12 @@ def summarize_job(job_text:dict)->JobSummary|None:
             job_obj=JobSummary.model_validate_json(response.text)
             return job_obj
         except errors.APIError as e:
-                print(e.code)
+                print("Error code:",e.code)
                 if attempt !=max_attempt-1 and e.code in retryable_status_codes:
                     time.sleep(2)
                 else:
-                    print(f"Job summarzing failed! due to {e}")
+                    print(f"API error! Summarization falied due to {e}")
                     return None
         except Exception as e:
-            print(f"Failed to summarize job posting: {e}")
+            print(f"Something went wrong: {e}")
             return None
