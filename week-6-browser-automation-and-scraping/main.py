@@ -1,5 +1,6 @@
 from scraper import get_jobs,get_job_details
 from playwright.sync_api import sync_playwright
+from send_to_telegram import send_to_telegram
 from AI_summarizer import summarize_job
 with sync_playwright() as p:
     try:
@@ -11,7 +12,7 @@ with sync_playwright() as p:
                 job_details=get_job_details(page,job["url"])
                 job_summary=summarize_job(job_details)
                 if job_summary is not None:
-                    print(f"[{job_summary}]\n")
+                    send_to_telegram(job_summary)
                 else:
                     print("Job not summarized since returned None!\n")
             except Exception as e:
