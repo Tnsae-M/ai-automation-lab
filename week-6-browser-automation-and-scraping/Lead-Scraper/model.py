@@ -9,4 +9,3 @@ class LeadModel(BaseModel):
     email:str|None=None
     social_links:List[str]|None=None
     about:str|None=Field(description="basic information about the buissness",default=None)
-
