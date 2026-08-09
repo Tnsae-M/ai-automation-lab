@@ -1,6 +1,6 @@
 from pydantic import BaseModel,Field
 from typing import List
-class leadModel(BaseModel):
+class LeadModel(BaseModel):
     name:str
     address:str|None=None
     phone:str|None=None
