@@ -4,11 +4,11 @@ try:
     header={"User-Agent":"lead-scraper-learning-project/0.1 (https://github.com/Tnsae-M)"}
     url="https://overpass-api.de/api/interpreter"
     query=f"""[out:json];
-    area[name='{city}']->.searchArea;
+    area[name:en='{city}']->.searchArea;
     node['amenity'='cafe'](area.searchArea);
     out body;"""
     query_test=f"""[out:json];
-    area[name='{city}']->.searchArea;
+    area["name:en"='{city}'][boundary='administrative']->.searchArea;
     .searchArea out;
 """
     req=requests.post(url,data=query_test,headers=header,timeout=25)
