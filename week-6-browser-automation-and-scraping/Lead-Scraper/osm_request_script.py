@@ -2,11 +2,11 @@ import requests
 # admin_level meaning differs by country, not standardized globally.
 # Keyed by city (tradeoff: no reuse across cities in same country). possibly use the city of same country's value as a level for another.
 
-# Dubai has admin level 10 but not mentioned because of the name is in arabic and the query uses name, not name:en where some don't have it
+# Dubai has admin level 10 as a city but lacks bounday admin
 # needs more countries in the USA and more!
 CITY_ADMIN_LEVELS = {
     "Addis Ababa": 4,"Berlin": 4,"London": 5,"Paris": 6,
-    "New York": 5,"Cairo": 4,"Nairobi": 7,"Madrid": 8,"Rome": 8,"Amsterdam": 10,"Toronto": 6,"Sydney": 6,"Dubai":10
+    "New York": 5,"Cairo": 4,"Nairobi": 7,"Madrid": 8,"Rome": 8,"Amsterdam": 10,"Toronto": 6,"Sydney": 6
 }
 DEFAULT_ADMIN_LEVEL = 4  # OSM wiki: "first subnational level" for most countries
 def osm_request(city:str):
@@ -26,4 +26,3 @@ def osm_request(city:str):
     except requests.exceptions.RequestException as e:
         print(f"error occured: {e}")
 # Be the first user yourself since you will need to reach out to clients to inquire if they need a website and build it for them.
-print(osm_request("Paris"))
