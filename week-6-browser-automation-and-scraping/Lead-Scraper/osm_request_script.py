@@ -5,7 +5,7 @@ import requests
 # Dubai has admin level 10 as a city but lacks bounday admin
 # needs more countries in the USA and more!
 CITY_ADMIN_LEVELS = {
-    "Addis Ababa": 4,"Berlin": 4,"London": 5,"Paris": 6,
+    "Addis Ababa": 4,"Berlin": 4,"Greater London": 5,"Paris": 6,
     "New York": 5,"Cairo": 4,"Nairobi": 7,"Madrid": 8,"Rome": 8,"Amsterdam": 10,"Toronto": 6,"Sydney": 6
 }
 DEFAULT_ADMIN_LEVEL = 4  # OSM wiki: "first subnational level" for most countries
@@ -22,7 +22,11 @@ def osm_request(city:str):
         node['amenity'='cafe'](area.searchArea);
         out body;"""
         req=requests.post(url,data=query,headers=header,timeout=25)
-        return req.json()
+        res=req.json()
+        # ids = [el["id"] for el in res["elements"]]
+        # print(len(ids), len(set(ids)))
+        return res
     except requests.exceptions.RequestException as e:
         print(f"error occured: {e}")
 # Be the first user yourself since you will need to reach out to clients to inquire if they need a website and build it for them.
+print(osm_request("Greater london"))
