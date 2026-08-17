@@ -1,0 +1,3062 @@
+[
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bilo's Pastry",
+    "address": "Kirkos,894/6-7",
+    "phone": "+251114169667/68/69",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Parisienne",
+    "address": "Kirkos,334/02",
+    "phone": "+251115528820",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sweet Cafe",
+    "address": "Kirkos",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bonjour",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Purple Cafe",
+    "address": "Kirkos,332/01 olympia",
+    "phone": "+251115518886",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Namrud Cafe",
+    "address": "153",
+    "phone": "+251111558067",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "August",
+    "address": "Kirkos,174",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Blues caf\u00e9",
+    "address": "Kirkos,616/07",
+    "phone": "+251115159273",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "New York Cafe & Restaurant",
+    "address": "Kirkos,136",
+    "phone": "+251115151243",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Raizel Cafe",
+    "address": "Arada",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Parisienne Cafe (Bole)",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bruno's Ice Cream (Ice Cafe)",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Time Out Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Square Garden",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lidya Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lavera Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Oscar Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Coffee Day's",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ambrosia Cafe",
+    "address": "African Ave,BMS 07B",
+    "phone": "+251115521110",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12ab\u120d\u12f2\u1235 \u12ae\u134a",
+    "address": "Equatorial Guinea Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "MK's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Na'A Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Oslo | \u12a6\u1235\u120e \u12ab\u134c",
+    "address": "Arada,342",
+    "phone": "+251111570038",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Madelene",
+    "address": "Kirkos,112/01",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sani Abacha",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Abyssinia",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tg",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Forest",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "To kolfie Atena tera",
+    "address": "Addis Ketema",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nina",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "ID",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nasa Cafe",
+    "address": "Kirkos",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Alem",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nati Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Daily coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Alem Buna",
+    "address": "Arada,588/03",
+    "phone": "+251111570887",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kokeb",
+    "address": "144",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Riche Cafe",
+    "address": "Kirkos",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Second Cup Cafe",
+    "address": "Kirkos",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Beti",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Meron",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kalab",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mame",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sweet Pastry & Caf\u00e9",
+    "address": "228/3",
+    "phone": "+251115514083",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sol Tina",
+    "address": "Addis Ketema,028",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Denver",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lemen Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1266\u1295 \u12ab\u134c \u12a5\u1293 \u122c\u1235\u1276\u122b\u1295\u1275",
+    "address": null,
+    "phone": "+251116602662",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": "Kirkos,317/02",
+    "phone": "+2511137245 83",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bake & Brew",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tady cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bilo's Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sunbird cafe",
+    "address": "Bole,612",
+    "phone": "+251116181383",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": "Bole,2449",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Geneva Cafe",
+    "address": "Arada,006",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Centro",
+    "address": "Arada",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Medhanealem",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bless",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La coquette",
+    "address": "Arada",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Evian's",
+    "address": "Arada",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Difference",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Hermon caf\u00e8 & Restaurant",
+    "address": "Arada",
+    "phone": "+251111565099",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Edna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Africa Coffee | \u12a0\u134d\u122a\u12ab \u1261\u1293",
+    "address": "Arada",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "M\u00fcnch German Bakery",
+    "address": "Bole,Cameroon Street,221",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Prima Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1233\u122a\u1235 \u120a\u1293 \u12ab\u134c \u12a5\u1293 \u122c\u1235\u1276\u122b\u1295\u1275",
+    "address": null,
+    "phone": "+251 911 434250",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Martha Wakshuma Peastry",
+    "address": "Kirkos,629/B",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Coffee shop",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cosmos Cafe",
+    "address": "Kirkos",
+    "phone": "+251115506030",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Picnic",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Elsa Coffee (Traditional Ethiopian Coffee)",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bole Mini",
+    "address": null,
+    "phone": "+251116639898",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Daeron Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Variety Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cupcake Delights Bakery",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Enrico",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bilo's Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "London Cafe",
+    "address": null,
+    "phone": "+25101166381",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Asni's Art Gallery",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Moyo's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tea Cosy Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Scandinavian Coffee and Bakery",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sheger Bldg.(Kaldis Coffee)",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Hamburg Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Galani",
+    "address": null,
+    "phone": "091 144 6265",
+    "website": "https://www.galanicafe.com/",
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Caf\u00e9 Choch\u00e9",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Babu Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "TOMOCA",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "TOMOCA",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "TOMOCA",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "TOMOCA \u1276\u121e\u12ab \u1261\u1293",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Loza cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sketch Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Karavan Coffee",
+    "address": null,
+    "phone": "0939778899",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ero Shake Juice jacros branch",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Parisienne",
+    "address": "Haile Gebresellasie Avenue",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Chicago Cafe & Restaurant",
+    "address": "Equatorial Guinea Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "A-Licious Juice & Fast Food House",
+    "address": null,
+    "phone": "+251118675424",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lombardia Cafe & Restaurant",
+    "address": "House No. 014/11",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Big Mak Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis Coffee, Mekanisa",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a2 \u12e9 \u1352\u12dc\u122a\u12eb \u12ab\u134c",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sport Cafe",
+    "address": "Roosevelt Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Eyoha Food Corner",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bonjour Total",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Bontia Pizza",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Jobra Cafe Medanialem",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Pilot Association",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaya",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Natani",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "CHEERS BURGER",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Garden of Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bubbles Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kona",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kona Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Selam",
+    "address": null,
+    "phone": "+251911555985",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Earl.wit Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "my cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mimi Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mekonnen Bakilaba Bet",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Esayas Teshome Tekue Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Yeshi Buna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Dibab Cafe & Restaurant \u12f5\u1263\u1265 \u12ab\u134c\u1293 \u122c\u1235\u1276\u122b\u1295\u1275",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cafe city",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bilos Pastry",
+    "address": "Cape Verde Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Insomia Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Elseven Coffee",
+    "address": "Cameroon Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Care Cafe",
+    "address": "Jomo Kenyatta Avenue",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u121b\u122b\u1276\u1295  \u12ab\u134c",
+    "address": "Dej. Mekonin Demisaw",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1340\u130a \u1261\u1293",
+    "address": null,
+    "phone": "+251911689068",
+    "website": null,
+    "email": "tsigeabera@yahoo.com",
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "AB Cafe",
+    "address": "Equatorial Guinea Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "abyssinia Coffee",
+    "address": "Equatorial Guinea Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a0\u1265\u1228\u1203\u121d \u12ab\u134c",
+    "address": "Fitawrari Habte Giorgis Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Fikat Buna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Addis Betty Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Aster Bunna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Amico Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Zee Zee's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tropical",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Chaka Buna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Trianon Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1233\u121a \u12ab\u134c",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Nouvelle",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mulu Caf\u00e9",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": "Gofa Mazoria to Mebrathail",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": "Namibia Avenue",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Juice and Salad Shop",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cup Cake Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1275\u12dd\u1273 \u121d\u122d\u1325 \u12e8\u1300\u1260\u1293 \u1261\u1293",
+    "address": null,
+    "phone": "0937647659",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Trio Caf\u00e9",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Inter Bistro",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1309\u12f5 \u126b\u12ed\u1265\u1235",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "M\u00e9lange Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a8\u1264 \u12ac\u12ad",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lafto(home sweet home)",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bana cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Fanous Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Juice World",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cape cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12ab\u120d\u12f2\u1235",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "BOSS",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mamokacha",
+    "address": null,
+    "phone": "+251 11 6 673220",
+    "website": null,
+    "email": "mamo_kacha@yahoo.com",
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Yegorad cafe qnd restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Wereda 1",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Euro Shake Juice",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Arada Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nuneyat Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nuneyat Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "La Patisserie",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1241\u1325\u122d \u1370 \u1261\u1293",
+    "address": "Churchill Avenue",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1260\u120b\u12ed \u1270\u12ad\u1209 \u12ac\u12ad \u1264\u1275",
+    "address": "Burundi Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Belos Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "10 birr macchiato cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mamo Kacha Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Garden of Coffee",
+    "address": "Alexander Pushkin",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Goverment cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Fonous Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1243\u120d \u12ab\u134c",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Caf\u00e9 Crema",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sport Cafe",
+    "address": "Omedla Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Qawa restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Addis Town Cafe, Bar and Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Igloo",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Buna Biet",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Aser Park",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "A.G Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sahis Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "AASTU Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "AASTU Cafe 2",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12de\u12ca \u12ab\u134d\u1270\u122d\u12eb/\u123b\u1202 \u1264\u1275",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u134d\u120c\u1268\u122d",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "90'\u1235 \u12e8\u134a\u120d\u121d \u121b\u12a5\u12a8\u120d \u12a5\u1293 \u12a2\u1295\u1270\u122d\u1294\u1275",
+    "address": null,
+    "phone": "0910505146",
+    "website": null,
+    "email": "fikrusolomon77@gmail.com",
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Little cafe in the park",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Zaid Coffee and Snack bar \u00ae",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Miki Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Wuha metecha",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Coffee Plus",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ethiopian Skylight Hotel - Lobby Lounge",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Buna Tera",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Agaz Grocery",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1293\u134a \u1260\u122d\u1308\u122d \u12a5\u1293 \u1352\u12db ( \u12a8\u1263\u1205\u120b\u12cd \u121d\u130d\u1266\u127d \u130b\u122d )",
+    "address": "\u1266\u120c \u12a0\u122b\u1265\u1233 \u12a8 \u1209\u1235\u1292\u12eb \u12f3\u1266 \u1264\u1275 \u1300\u122d\u1263,649(2)",
+    "phone": "+251912646516",
+    "website": null,
+    "email": "netsineganafi@gmail.com",
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "The Brim cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Dink Donut",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bright Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sister's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tsion Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Yamrot Cafe and Bakery",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Quality Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Jacaranda Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Keach cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sister's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Jacaranda Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ika Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Alem Gallery and Coffee House",
+    "address": null,
+    "phone": null,
+    "website": "http://www.alemgetachew.com/",
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Occasion Cafe and Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12ae\u12ac\u1275 \u1261\u1293",
+    "address": "Old Ambo Road -\u12e8\u12f5\u122e\u12cd \u12e8\u12a0\u121d\u1266 \u1218\u1295\u1308\u12f5",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Roma bar and resturant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Crush Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Sosha Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Delmela",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ambience",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffe - Bole MedhaniAlem",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1265\u122b\u12cd\u1295 \u1261\u1293",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a0\u12f6\u1293 \u1261\u1293",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12f2\u12f6 \u12ab",
+    "address": "\u1244\u122b",
+    "phone": "+251911520241",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Java Coffe House",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tourist Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "The Cake Lounge",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Saq Cafe and Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mamokacha Novis",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Blue Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Juice Bar",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Le Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tryst Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Barista's Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bilo's Pastry",
+    "address": "Cape Verde Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cordial Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Abyssinia Coffee",
+    "address": null,
+    "phone": "+251 94 410 5183",
+    "website": "https://coffeeabyssinia.com/",
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "St Mary Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Maleda Cafe & Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nimo Cafe & Juice",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Lion's Cage Pastry",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Melek Burguer & Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Epiphany Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Meseret Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Habesha Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Romita",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "The Goat Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Mamokacha Novis",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Robera Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cafe Delight",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Yo Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Washington Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u121b\u121e\u12ab\u127b",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u122e\u1264\u122a \u130d\u122e\u1230\u122a",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee Addisu Gebeya",
+    "address": "Tunisia Av.",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Pr\u00efmaver\u00e0",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "K\u00e4t\u00ebgna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Nitsui coffee",
+    "address": "\u1300\u122d\u1218\u1295 \u12a0\u12f0\u1263\u1263\u12ed",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Pison cafe",
+    "address": "\u12a4\u12a4\u1232\u12a4\u121d\u12cb\u12ed \u1218\u1296\u122a\u12eb \u1264\u1275",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Makki\u2019s Cafe",
+    "address": "2nd Floor",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kech Cafe",
+    "address": "Block 182",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u1300\u130d\u1292\u1275 \u12a9\u123d\u1293",
+    "address": null,
+    "phone": "0920715867",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kategna",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12ab\u134c good",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Boba Bubble House",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Illy Caffe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Christ cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a0\u12ed\u1295\u12ec",
+    "address": "CMC Road",
+    "phone": "098 708 3619",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u121b\u121a \u12ab\u134c",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kal Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Green Gold",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a6\u1265\u1233\u1295",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Bure",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "G\u00e2teau Caf\u00e9",
+    "address": "Churchill Avenue",
+    "phone": "+251 90 477 0000",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tomoca",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Afran Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Erkata Caf\u00e9",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Erkata Caf\u00e9",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a2\u1208\u130b\u1295\u1275 \u12ab\u134c \u12a5\u1293 \u1260\u122d\u1308\u122d",
+    "address": null,
+    "phone": "+251951279012",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a4\u1208\u130b\u1295\u1275 \u1260\u122d\u1308\u122d \u1264\u1275 \u12a0\u12f2\u1235 \u12a0\u1260\u1263",
+    "address": "Near Awraris Building - \u12a0\u12cd\u122b\u122a\u1235 \u1205\u1295\u1343 \u12a0\u1320\u1308\u1265",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u12a4\u1208\u130b\u1295\u1275 \u1260\u122d\u1308\u122d \u12a5\u1290 \u12ab\u134c - \u12a0\u12f2\u1235 \u12a0\u1260\u1263",
+    "address": null,
+    "phone": "+251951279012",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "One Koo Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Haro Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi's Coffee",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Oasis Juice Bar Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldis Coffee | Summit | \u12ab\u120d\u12f2\u1235 \u12ae\u134a | \u1230\u121a\u1275",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Dari",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Tryst Cafe and Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Wow Burger",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Avocado Bistro",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Kaldi",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Maya",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ayate Coffee | \u12a0\u12eb\u1274 \u1261\u1293",
+    "address": "Lafto",
+    "phone": "+251 91 897 0103",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cafe Rechel",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "National Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "The Blue Hen",
+    "address": null,
+    "phone": "+251 99 172 1626",
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Go Fresh",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Robik Cafe",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Ellina Coffee",
+    "address": "BL_03_706 Street",
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Koba",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Cal",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Entoto Cafe And Restaurant",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Panda",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": null,
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "Coffee City",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  },
+  {
+    "name": "\u121c\u122b \u1261\u1293",
+    "address": null,
+    "phone": null,
+    "website": null,
+    "email": null,
+    "social_links": null,
+    "about": null
+  }
+]

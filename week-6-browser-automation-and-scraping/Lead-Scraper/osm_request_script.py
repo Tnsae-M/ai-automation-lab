@@ -22,11 +22,8 @@ def osm_request(city:str):
         node['amenity'='cafe'](area.searchArea);
         out body;"""
         req=requests.post(url,data=query,headers=header,timeout=25)
-        res=req.json()
-        # ids = [el["id"] for el in res["elements"]]
-        # print(len(ids), len(set(ids)))
-        return res
+        return req.json()
     except requests.exceptions.RequestException as e:
         print(f"error occured: {e}")
+        print(req.text)
 # Be the first user yourself since you will need to reach out to clients to inquire if they need a website and build it for them.
-print(osm_request("Greater london"))

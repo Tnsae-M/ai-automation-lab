@@ -8,10 +8,10 @@ def parse_element(element:dict)->LeadModel:
     phone=tags.get("phone")
     website=tags.get("website")
     email=tags.get("email")
-    print(LeadModel(
+    return LeadModel(
         name=name,
         address=address,
         email=email,
         phone=phone,
         website=website
-    ))
+    )
