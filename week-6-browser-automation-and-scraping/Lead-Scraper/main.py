@@ -18,3 +18,4 @@ os.makedirs(lead_folder_path,exist_ok=True)
 dicts_list=[ item.model_dump() for item in data_list]
 with open(path_folder,"w") as file:
     json.dump(dicts_list,file,indent=2)
+print(f"Lead data of {city} saved inside leads directory.")
