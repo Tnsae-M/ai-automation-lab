@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 from email_extractor import extract_emails
-url="https://www.postgresql.org/about/contact/"
+url="https://www.galanicafe.com/"
 with sync_playwright() as p:
     try:
         browser=p.chromium.launch(headless=False)
