@@ -93,3 +93,19 @@ def link_extractor(page:Page)->set[str]:
             clean_link=href.strip()
             links.add(clean_link)
     return links
+def extract_about(page:Page)->str:
+    meta_data=page.locator('meta[name="description" i],meta[property="og:description" i]')
+    if meta_data.count()>0:
+       summary=meta_data.first.get_attribute("content")
+       if summary and summary.strip():
+           return summary.strip()
+    try:
+        paragraphs=page.locator('main p, article p, p').all_inner_texts()
+        for p in paragraphs:
+            clean_p=p.strip()
+        if len(clean_p)>40:
+            return clean_p[:300]
+    except Exception as e:
+        print(f'something went wrong when parsing the about!\nerror: {e}')
+        pass
+    return None
