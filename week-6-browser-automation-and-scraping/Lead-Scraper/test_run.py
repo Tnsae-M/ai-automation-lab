@@ -1,6 +1,6 @@
 from playwright.sync_api import sync_playwright
 from email_extractor import extract_emails
-from social_media_link_extractor import social_link_extractor
+from social_media_link_extractor import link_extractor
 url="https://coffeeabyssinia.com/"
 with sync_playwright() as p:
     try:
@@ -10,7 +10,7 @@ with sync_playwright() as p:
         page.goto(url,wait_until='domcontentloaded',timeout=30000)
         # emails=extract_emails(page)
         # print(f"Found emails on {url}: ",emails)
-        socials=social_link_extractor(page=page)
+        socials=link_extractor(page=page)
         print(f"Social media links: {socials}")
         browser.close()
     except Exception as e:

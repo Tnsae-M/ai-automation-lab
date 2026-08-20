@@ -82,3 +82,15 @@ def extract_emails(page: Page) -> set[str]:
     results.update(_extract_body_text(page))
 
     return results
+# ----- Social link ex
+socials=["facebook","instagram","tiktok","twitter"]
+def link_extractor(page:Page)->set[str]:
+    links:set[str]=set()
+    hrefs:list[str]=page.eval_on_selector_all('a[href]','elements=>elements.map(el=>el.getAttribute("href"))')
+    for href in hrefs:
+        if not href:
+            continue
+        if any(li in href.lower() for li in socials):
+            clean_link=href.strip()
+            links.add(clean_link)
+    return links
