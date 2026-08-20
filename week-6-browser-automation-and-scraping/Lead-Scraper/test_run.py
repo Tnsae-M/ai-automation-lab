@@ -1,6 +1,5 @@
 from playwright.sync_api import sync_playwright
-from email_extractor import extract_emails
-from social_media_link_extractor import link_extractor
+from enricher import extract_emails,link_extractor
 url="https://coffeeabyssinia.com/"
 with sync_playwright() as p:
     try:

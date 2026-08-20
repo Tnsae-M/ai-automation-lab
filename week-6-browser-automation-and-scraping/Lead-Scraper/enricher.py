@@ -70,7 +70,6 @@ def _extract_body_text(page:Page)->set[str]:
                 found.add(valid)
     except Exception as e:
         print(f"something went wrong when scraping email.\nerror: {e}")
-        pass
     return found
 def extract_emails(page: Page) -> set[str]:
     results: set[str] = set()
@@ -82,8 +81,8 @@ def extract_emails(page: Page) -> set[str]:
     results.update(_extract_body_text(page))
 
     return results
-# ----- Social link ex
-socials=["facebook","instagram","tiktok","twitter"]
+# ----- Social link extractor
+socials=["facebook","instagram","tiktok","twitter","x.com","linkedin"]
 def link_extractor(page:Page)->set[str]:
     links:set[str]=set()
     hrefs:list[str]=page.eval_on_selector_all('a[href]','elements=>elements.map(el=>el.getAttribute("href"))')
