@@ -1,5 +1,5 @@
 from playwright.sync_api import sync_playwright
-from enricher import enrich_model
+from enricher import enrich_data
 from model import LeadModel
 with sync_playwright() as p:
     try:
@@ -15,7 +15,7 @@ with sync_playwright() as p:
             "about": null
         }'''
         test_data_lead=LeadModel.model_validate_json(test_data)
-        print(enrich_model(test_data_lead,page))
+        print(enrich_data(test_data_lead,page))
         browser.close()
     except Exception as e:
         print(f"sth went wrong!\nError: {e}")

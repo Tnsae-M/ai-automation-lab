@@ -104,17 +104,21 @@ def extract_about(page:Page)->str:
         paragraphs=page.locator('main p, article p, p').all_inner_texts()
         for p in paragraphs:
             clean_p=p.strip()
-        if len(clean_p)>40:
-            return clean_p[:300]
+            if len(clean_p)>40:
+                return clean_p[:300]
     except Exception as e:
         print(f'something went wrong when parsing the about!\nerror: {e}')
         pass
     return None
-def enrich_model(lead:LeadModel,page:Page):
+def enrich_data(lead:LeadModel,page:Page):
         try:
             url=lead.website
             if not url:
                 print(f"Lead has no website!")
+                return lead
+            if not url.startswith("http://") or not url.startswith("https://"):
+                clean_url=re.sub(r'^https?[:/]+','',url.strip(),flags=re.IGNORECASE)
+                url=f"https://{clean_url}"
             page.goto(url=url,wait_until='domcontentloaded',timeout=30000)
             emails=extract_emails(page)
             if emails:
@@ -130,4 +134,5 @@ def enrich_model(lead:LeadModel,page:Page):
             lead.about=about
             return lead
         except Exception as e:
-            print(f"Something went wrong when enriching lead!\nError: {e}")
+            print(f"Something went wrong when enriching lead {lead.name}!\nError: {e}")
+            return lead
