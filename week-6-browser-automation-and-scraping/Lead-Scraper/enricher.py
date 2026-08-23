@@ -115,7 +115,6 @@ def enrich_model(lead:LeadModel,page:Page):
             url=lead.website
             if not url:
                 print(f"Lead has no website!")
-                return None
             page.goto(url=url,wait_until='domcontentloaded',timeout=30000)
             emails=extract_emails(page)
             if emails:
