@@ -2,6 +2,7 @@ import re
 from urllib.parse import unquote
 from playwright.sync_api import Page
 import json
+from model import LeadModel
 EMAIL_REGEX = re.compile(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}',re.IGNORECASE)
 EMAIL_STRICT_REGEX = re.compile(
     r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
@@ -83,7 +84,7 @@ def extract_emails(page: Page) -> set[str]:
     return results
 # ----- Social link extractor
 socials=["facebook","instagram","tiktok","twitter","x.com","linkedin"]
-def link_extractor(page:Page)->set[str]:
+def social_links_extractor(page:Page)->set[str]:
     links:set[str]=set()
     hrefs:list[str]=page.eval_on_selector_all('a[href]','elements=>elements.map(el=>el.getAttribute("href"))')
     for href in hrefs:
@@ -109,3 +110,25 @@ def extract_about(page:Page)->str:
         print(f'something went wrong when parsing the about!\nerror: {e}')
         pass
     return None
+def enrich_model(lead:LeadModel,page:Page):
+        try:
+            url=lead.website
+            if not url:
+                print(f"Lead has no website!")
+                return None
+            page.goto(url=url,wait_until='domcontentloaded',timeout=30000)
+            emails=extract_emails(page)
+            if emails:
+                print("Emails Extraction is complete!")
+            social_links=social_links_extractor(page)
+            if social_links:
+                print("Social links Extraction is complete!")
+            about=extract_about(page)
+            if about:
+                print("About Extraction is complete!")
+            lead.email=emails
+            lead.social_links=social_links
+            lead.about=about
+            return lead
+        except Exception as e:
+            print(f"Something went wrong when enriching lead!\nError: {e}")

@@ -1,16 +1,21 @@
 from playwright.sync_api import sync_playwright
-from enricher import extract_emails,link_extractor,extract_about
-url="https://gemini.google.com/"
+from enricher import enrich_model
+from model import LeadModel
 with sync_playwright() as p:
     try:
         browser=p.chromium.launch(headless=False)
         page=browser.new_page()
-
-        page.goto(url,wait_until='domcontentloaded',timeout=30000)
-        # emails=extract_emails(page)
-        # print(f"Found emails on {url}: ",emails)
-        socials=extract_about(page=page)
-        print(f"About extracted: {socials}")
+        test_data='''{
+            "name": "Abyssinia Coffee",
+            "address": null,
+            "phone": "+251 94 410 5183",
+            "website": "https://coffeeabyssinia.com/",
+            "email": null,
+            "social_links": null,
+            "about": null
+        }'''
+        test_data_lead=LeadModel.model_validate_json(test_data)
+        print(enrich_model(test_data_lead,page))
         browser.close()
     except Exception as e:
         print(f"sth went wrong!\nError: {e}")
