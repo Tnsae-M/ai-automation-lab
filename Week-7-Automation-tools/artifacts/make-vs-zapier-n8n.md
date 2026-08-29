@@ -26,11 +26,18 @@ n8n is the tool where it's open-source and can be self hosted. it's the most fle
 
 - it's self hosted
 - it's the most flexible for the professional with full data access.
+- very cost efficient.
+
+#### custom backend along with n8n
+
+a custom backend can be used along n8n for 2 main ways:
+
+1. _n8n_: acts like an **outer orchestrator** where heavy tasks are handled by the custom backend(i.e custom LLM,determinstic logic,...) while 3rd party SaaS connections are maintained and activated by n8n(email,spreadsheets,...)2. _backend as a core engine_:here everything is handled by the backend and n8n only handles non-critical operations like notifications.
 
 ## Architectural difference:
 
-| Dimension | Excution model || Excution model |
-|--------------|-----------------||-----------------|
-| Zapier |sequential |task-based(very expensive for high volume) |
-| n8n |Graph/node based|Fixed VPS cost(very cheap alternative) |
-| make.com |Graph based |operation-based(moderate price) |
+| Dimension | Excution model   |                                            | Excution model                                                | When to use |
+| --------- | ---------------- | ------------------------------------------ | ------------------------------------------------------------- | ----------- |
+| Zapier    | sequential       | task-based(very expensive for high volume) | quick and standard automation for non-dev to manage           |
+| n8n       | Graph/node based | Fixed VPS cost(very cheap alternative)     | for privacy sensitive and high vol pipeline.                  |
+| make.com  | Graph based      | operation-based(moderate price)            | for complex data transformation to avoid writing backend code |
