@@ -11,22 +11,40 @@ def mock_search_places(query: str) -> dict[str, str]:
         return {
             "name": "Tomoca Coffee",
             "phone": "+251 11 111 2233",
-            "website": "https://tomocacoffee.com",
+            "website": "https://tomocacoffee-fake.com",
+            "fallback_website": "https://tomocacoffee.com",
             "city": "Addis Ababa"
         }
-    return {"error": "No business found matching query"}
+    raise ValueError(f"No buisness found for {query}") 
+
 
 def mock_check_url_status(url: str) -> dict[str, Any]:
     """Simulates sending an HTTP HEAD request to check availability."""
     print(f"  [Executing Tool: mock_check_url_status] url='{url}'")
-    if "tomocacoffee.com" in url:
-        return {"url": url, "status_code": 200, "reachable": True}
-    return {"url": url, "status_code": 404, "reachable": False}
+    if "fake" in url:
+        raise ConnectionError(f"HTTP 404: Domain name not resolved or inactive")
+    return {"url": url, "status_code": 200, "reachable": True}
 # tool dispatcher
 TOOL_DISPATCH:dict[str,Callable[...,Any]]={
     "mock_places":mock_search_places,
     "mock_url_search":mock_check_url_status
 }
+# safe exection tool wrapper
+def safe_exec_wrapper(func:str,args:dict[str,Any])->str:
+    """converts runtime failure to LLM feedback."""
+    handler=TOOL_DISPATCH.get(func)
+    if not handler:
+        return json.dumps({"status":"error","message":f"Unknown tool: '{func}'"})
+    try:
+        result=handler(**args)
+        return json.dumps({"status":"success","data":result})[:1000]
+    except Exception as e:
+        return json.dumps({
+            "status":"error",
+            "error_type":type(e).__name__,
+            "message":str(e),
+            "hint":"Try an alternative argument or fallback parameter if available."
+        })
 # LLM decision engine
 def mock_llm_step(msgs:list[dict[str,Any]])->dict[str,Any]:
     has_search_result=any(
