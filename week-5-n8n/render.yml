@@ -4,7 +4,7 @@ services:
     runtime: image
     name: Lead-Generation-workflow
     image: 
-      url: docker.n8n.io/n8nio/n8n:latest
+      url: docker.io/n8nio/n8n:latest
     envVars:
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
