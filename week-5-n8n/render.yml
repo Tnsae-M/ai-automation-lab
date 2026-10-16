@@ -1,0 +1,37 @@
+services:
+  - type: web
+    plan: free
+    runtime: image
+    name: Lead-Generation-workflow
+    image: 
+      url: docker.n8n.io/n8nio/n8n:latest
+    envvars:
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_DATABASE
+        fromDatabase: 
+          name: lead-db
+          property: database
+      - key: DB_POSTGRESDB_HOST
+        fromDatabase: 
+          name: lead-db
+          property: host
+      - key: DB_POSTGRESDB_PASSWORD
+        fromDatabase: 
+          name: lead-db
+          property: password
+      # - key: DB_POSTGRESDB_PORT
+      #   fromDatabase: 
+      #     name: lead-db
+      #     property: port
+      - key: DB_POSTGRESDB_USER
+        fromDatabase: 
+          name: lead-db
+          property: user
+databases:
+  - name: lead-db
+    plan: free
+    
+
