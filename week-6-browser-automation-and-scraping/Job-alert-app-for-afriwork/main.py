@@ -4,7 +4,7 @@ from send_to_telegram import send_to_telegram
 from AI_summarizer import summarize_job
 with sync_playwright() as p:
     try:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True) #changed headless to true
         page = browser.new_page()
         jobs=get_jobs(page)
         for job in jobs:
