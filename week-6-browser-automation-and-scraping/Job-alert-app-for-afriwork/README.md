@@ -51,7 +51,7 @@ An automated browser scraping and AI summarization pipeline that monitors [Afriw
 ## Screenshots & Verification
 
 ### 1. Telegram Job Alert Notification
-![Telegram Bot Job Alert](screenshots/job_alert_screenshot_telegram.jpg)
+![Telegram Bot Job Alert](screenshots/job_alert_screenshot_telegram.png)
 *Figure 1: Rich HTML job alert sent to Telegram featuring job metadata, AI summary, and direct link.*
 
 ### 2. Local Terminal Run (Discovery & Deduplication)
