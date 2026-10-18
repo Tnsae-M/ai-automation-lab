@@ -50,22 +50,20 @@ An automated browser scraping and AI summarization pipeline that monitors [Afriw
 
 ## Screenshots & Verification
 
-> *Note: Screenshot placeholders are provided below. Images will be added to the `./screenshots` directory in a subsequent session.*
-
 ### 1. Telegram Job Alert Notification
-![Telegram Bot Job Alert](screenshots/telegram_job_alert.jpg)
+![Telegram Bot Job Alert](screenshots/job_alert_screenshot_telegram.jpg)
 *Figure 1: Rich HTML job alert sent to Telegram featuring job metadata, AI summary, and direct link.*
 
 ### 2. Local Terminal Run (Discovery & Deduplication)
-![Local Test Execution Logs](screenshots/local_test_run.jpg)
+![Local Test Execution Logs](screenshots/local_terminal_run.png)
 *Figure 2: Execution output demonstrating discovery, scraping, Telegram delivery, and subsequent skipping of duplicate jobs.*
 
 ### 3. Upstash Redis Deduplication Store
-![Upstash Redis Dashboard](screenshots/upstash_redis_keys.jpg)
+![Upstash Redis Dashboard](screenshots/upstash_redis_keys.png)
 *Figure 3: Upstash Redis set (`seen_job_urls`) persisting processed job URLs across cron executions.*
 
 ### 4. Railway Cron Deployment & Container Logs
-![Railway Deployment Logs](screenshots/railway_deployment.jpg)
+![Railway Deployment Logs](screenshots/railway_deployment.png)
 *Figure 4: Railway container execution output scheduled to run automatically on a daily cron trigger.*
 
 ---
