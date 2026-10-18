@@ -22,8 +22,8 @@ def summarize_job(job_text:dict)->JobSummary|None:
     for attempt in range(max_attempt):
         try:
             response=client.models.generate_content(
-                model="gemini-3.1-flash-lite",
-                contents=f"Summerize this job: {job}",
+                model="gemini-3.8-flash",
+                contents=f"Summarize this job: {job}",
                 config=config
             )
             job_obj=JobSummary.model_validate_json(response.text)

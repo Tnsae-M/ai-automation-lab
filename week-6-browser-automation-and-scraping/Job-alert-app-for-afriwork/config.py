@@ -3,9 +3,14 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-gemini_key=os.getenv("GEMINI_API_KEY")
-telegram_key=os.getenv("TELEGRAM_API_KEY")
-chat_id=os.getenv("CHAT_ID")
+gemini_key = os.getenv("GEMINI_API_KEY")
+telegram_key = os.getenv("TELEGRAM_API_KEY")
+chat_id = os.getenv("CHAT_ID")
+
+# Optional — required only for deduplication (free Upstash Redis)
+upstash_url = os.getenv("UPSTASH_REDIS_REST_URL", "")
+upstash_token = os.getenv("UPSTASH_REDIS_REST_TOKEN", "")
+
 if not gemini_key:
     print("Something went wrong when fetching gemini api key!")
     sys.exit(1)
@@ -15,3 +20,5 @@ if not telegram_key:
 if not chat_id:
     print("Something went wrong when fetching TG chat id!")
     sys.exit(1)
+if not upstash_url or not upstash_token:
+    print("Warning: UPSTASH_REDIS_REST_URL or UPSTASH_REDIS_REST_TOKEN not set — deduplication disabled.")

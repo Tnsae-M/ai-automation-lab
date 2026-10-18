@@ -1,3 +1,4 @@
+import time
 from urllib.parse import urljoin
 
 def get_jobs(page):
@@ -29,7 +30,8 @@ def get_jobs(page):
             print(f"An error occurred while getting job links: {e}")
 
 
-def get_job_details(page,job_url):
+def get_job_details(page, job_url):
+        time.sleep(1.5)  # politeness delay — avoid triggering bot detection
         try:
             page.goto(job_url,
                     wait_until="domcontentloaded",
